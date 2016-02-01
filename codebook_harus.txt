@@ -1,0 +1,90 @@
+# Codebook associated with run_analysis.R
+The output file harus.txt contains 81 columns of variables from the Human Activity Recognition using Smartphones experiment. The following list details each column of this summary data (mean of the standard deviation and mean output of measures)
+
+Col# Col. Header            Description                 Unit
+  1.	subject.id            Subject identification      Number
+2.	activity.id             Activity ID                 Number (1 to 6 referring activities in actvity)
+3.	TimeBodyAcc.std.X       Time Domain of Body acc along X   Refer to note below.
+4.	TimeBodyAcc.std.Y       Time Domain of Body acc along Y
+5.	TimeBodyAcc.std.Z       Time Domain of Body acc along Z
+6.	TimeGravityAcc.std.X    Time Domain of Gravity acc along X
+7.	TimeGravityAcc.std.Y    Time Domain of Gravity acc along Y
+8.	TimeGravityAcc.std.Z    Time Domain of Gravity acc along Z
+9.	TimeBodyAccJerk.std.X   Time Domain of Body jerk acc along X
+10.	TimeBodyAccJerk.std.Y   Time Domain of Body jerk acc along Y
+11.	TimeBodyAccJerk.std.Z   Time Domain of Body jerk acc along Z
+12.	TimeBodyGyro.std.X      Time Domain of Body Gyro data along X
+13.	TimeBodyGyro.std.Y      Time Domain of Body Gyro data along Y
+14.	TimeBodyGyro.std.Z      Time Domain of Body Gyro data along Z
+15.	TimeBodyGyroJerk.std.X  Time Domain of body jerk Gyro data along X
+16.	TimeBodyGyroJerk.std.Y  Time Domain of body jerk Gyro data along Y
+17.	TimeBodyGyroJerk.std.Z  Time Domain of body jerk Gyro data along Z
+18.	TimeBodyAccMag.std      Time Domain of Body acc magnitude 
+19.	TimeGravityAccMag.std   Time Domain of Gravity acc magnitude
+20.	TimeBodyAccJerkMag.std  Time Domain of Body acc jerk magnitude
+21.	TimeBodyGyroMag.std     Time Domain of Body Gyro magnitude
+22.	TimeBodyGyroJerkMag.std Time Domain of Body Gyro jerk magnitude
+23.	FrequencyBodyAcc.std.X  Frequency Domain of Body acc along X
+24.	FrequencyBodyAcc.std.Y  Frequency Domain of Body acc along Y
+25.	FrequencyBodyAcc.std.Z  Frequency Domain of Body acc along Z
+26.	FrequencyBodyAccJerk.std.X Freq. Domain of Body jerk acc along X
+27.	FrequencyBodyAccJerk.std.Y Freq. Domain of Body jerk acc along Y
+28.	FrequencyBodyAccJerk.std.Z Freq. Domain of Body jerk acc along Z
+29.	FrequencyBodyGyro.std.X Freq. Domain of Body Gyro data along X
+30.	FrequencyBodyGyro.std.Y Freq. Domain of Body Gyro data along Y
+31.	FrequencyBodyGyro.std.Z Freq. Domain of Body Gyro data along Z
+32.	FrequencyBodyAccMag.std Freq. Domain of Body acc magnitude 
+33.	FrequencyBodyBodyAccJerkMag.std Freq. Domain of Body acc jerk magnitude 
+34.	FrequencyBodyBodyGyroMag.std  Freq. Domain of Body Body Gyro magnitude 
+35.	FrequencyBodyBodyGyroJerkMag.std Freq. Domain of Body Body Gyro jerk magnitude 
+36.	TimeBodyAcc.mean.X    Time Domain of Body acc. mean X
+37.	TimeBodyAcc.mean.Y    Time Domain of Body acc. mean Y
+38.	TimeBodyAcc.mean.Z    Time Domain of Body acc. mean Z
+39.	TimeGravityAcc.mean.X Time Domain of Gravity acc. mean X
+40.	TimeGravityAcc.mean.Y Time Domain of Gravity acc. mean Y
+41.	TimeGravityAcc.mean.Z Time Domain of Gravity acc. mean Z
+42.	TimeBodyAccJerk.mean.X  Time Domain of Body acc. jerk mean X
+43.	TimeBodyAccJerk.mean.Y  Time Domain of Body acc. jerk mean Y
+44.	TimeBodyAccJerk.mean.Z  Time Domain of Body acc. jerk mean Z
+45.	TimeBodyGyro.mean.X     Time Domain of Body Gyro mean along X
+46.	TimeBodyGyro.mean.Y     Time Domain of Body Gyro mean along Y
+47.	TimeBodyGyro.mean.Z     Time Domain of Body Gyro mean along Z
+48.	TimeBodyGyroJerk.mean.X Time Domain of Body Gyro jerk mean along X
+49.	TimeBodyGyroJerk.mean.Y Time Domain of Body Gyro jerk mean along Y
+50.	TimeBodyGyroJerk.mean.Z Time Domain of Body Gyro jerk mean along Z
+51.	TimeBodyAccMag.mean     Time Domain of Body acc. magnitude mean
+52.	TimeGravityAccMag.mean  Time Domain of Gravity acc. magnitude mean
+53.	TimeBodyAccJerkMag.mean Time Domain of Body acc. jerk magnitude mean
+54.	TimeBodyGyroMag.mean    Time Domain of Gyro magnitude mean
+55.	TimeBodyGyroJerkMag.mean  Time Domain of Gyro jerk magnitude mean
+56.	FrequencyBodyAcc.mean.X   Freq. Domain Body acc mean along X
+57.	FrequencyBodyAcc.mean.Y   Freq. Domain Body acc mean along Y
+58.	FrequencyBodyAcc.mean.Z   Freq. Domain Body acc mean along Z
+59.	FrequencyBodyAcc.meanFreq.X Freq. Domain Body acc mean Freq. along X
+60.	FrequencyBodyAcc.meanFreq.Y Freq. Domain Body acc mean Freq. along Y
+61.	FrequencyBodyAcc.meanFreq.Z Freq. Domain Body acc mean Freq. along Z
+62.	FrequencyBodyAccJerk.mean.X Freq. Domain of Body jerk acc mean X
+63.	FrequencyBodyAccJerk.mean.Y Freq. Domain of Body jerk acc mean Y
+64.	FrequencyBodyAccJerk.mean.Z Freq. Domain of Body jerk acc mean Z
+65.	FrequencyBodyAccJerk.meanFreq.X Freq. Domain of Body jerk acc mean Freq X
+66.	FrequencyBodyAccJerk.meanFreq.Y Freq. Domain of Body jerk acc mean Freq Y
+67.	FrequencyBodyAccJerk.meanFreq.Z Freq. Domain of Body jerk acc mean Freq Z
+68.	FrequencyBodyGyro.mean.X    Freq. Domain Body Gyro mean X
+69.	FrequencyBodyGyro.mean.Y    Freq. Domain Body Gyro mean Y
+70.	FrequencyBodyGyro.mean.Z    Freq. Domain Body Gyro mean Z
+71.	FrequencyBodyGyro.meanFreq.X  Freq. Domain Body Gyro mean Freq  X
+72.	FrequencyBodyGyro.meanFreq.Y  Freq. Domain Body Gyro mean Freq  Y
+73.	FrequencyBodyGyro.meanFreq.Z  Freq. Domain Body Gyro mean Freq  Z
+74.	FrequencyBodyAccMag.mean      Freq. Domain Body acc Magnitude mean 
+75.	FrequencyBodyAccMag.meanFreq  Freq. Domain Body acc Magnitude mean Freq
+76.	FrequencyBodyBodyAccJerkMag.mean  Freq. Domain Body acc jerk Magnitude mean 
+77.	FrequencyBodyBodyAccJerkMag.meanFreq  Freq. Domain Body jerk acc Magnitude mean Freq
+78.	FrequencyBodyBodyGyroMag.mean     Freq. Domain Body Body Gyro Magnitude mean 
+79.	FrequencyBodyBodyGyroMag.meanFreq Freq. Domain Body Body Gyro Magnitude mean Freq
+80.	FrequencyBodyBodyGyroJerkMag.mean Freq. Domain Body Body Gyro jerk Magnitude mean 
+81.	FrequencyBodyBodyGyroJerkMag.mean Freq Freq. Domain Body Body Gyro jerk Magnitude mean Freq.
+
+Note: 
+The units used for the accelerations (total and body) are 'g's (gravity of earth -> 9.80665 m/seg2).
+The gyroscope units are rad/seg.
+

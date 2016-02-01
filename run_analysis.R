@@ -1,5 +1,5 @@
 # GACD Project script file - run_analysis.R
-# Load dplyr library
+# Load dplyr library 
 library(dplyr)
 #library(tidyr)
 # Read all the text files to analysis its content
